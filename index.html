@@ -1,28 +1,57 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>About me: Maya D.</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src = "index.js"></script>
   </head>
 
   <body>
     <h1>About Me</h1>
-      <p>I am an incoming freshman at LMU. Currently I am in the <a href="http://cse.lmu.edu/centerforstudentsuccess/first-yearlearningcommunities/cssi/"> CSSI</a> program.</p>
+      <p>My name is Maya and I am an incoming freshman at Loyola Marymount University. Currently I am in the <a href="http://cse.lmu.edu/centerforstudentsuccess/first-yearlearningcommunities/cssi/"> CSSI</a> program.</p>
 
-    <h2>My Personal Information</h2>
+    <h2 class="subtitle">My Personal Information</h2>
       <ul>
-        <li>Age: 17
-        <li>Hometown: San Diego
-        <li>Height: 6ft
-        <li>Favorite color: Blue
+        <li><strong>Age</strong>: 17
+        <li><strong>Hometown</strong>: San Diego
+        <li><strong>Height</strong>: 6ft
+        <li><strong>Favorite Color</strong>: Blue
+        <li><strong>Pets</strong>: Two Dogs -> Koda and Teddy
       </ul>
-      <img src="https://www.culturewithtravel.com/wp-content/uploads/2016/08/san_diego.png" width="300">
+      <img id="sandiego"src="https://www.culturewithtravel.com/wp-content/uploads/2016/08/san_diego.png" width="300">
+      <div><button class="fab">Click here for a surprise!</button></div>
 
-    <h2>Hobbies&#9829;</h2>
+    <h2 class="subtitle">Hobbies&#9829;</h2>
       <ul>
         <li>Computer Science
         <li>Baking
         <li>Listening to music
         <li>Sports
+        <li>Drawing
+        <li>Traveling
       </ul>
-      <img src="http://freedesignfile.com/upload/2014/10/Hand-drawn-colored-musical-instruments-vector-01.jpg" width="250">
+
+      <p><em>I live in San Diego. Look around Google Maps to travel to new places!</em></p>
+
+      <div id="map"></div>
+      <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 32.715736, lng: -117.161087},
+          zoom: 8
+        });
+      }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCec5VIqu2v3PTrtiu3c_K3vmr_0y-FN7U&callback=initMap" async defer></script>
+
+      <p><em>Click on a gif below to open a cool website based on the animation!!</em></p>
+        <a href="https://www.spotify.com/us/"><img src="https://cdn.dribbble.com/users/441326/screenshots/3165191/spotify-gif---oliver-keane.gif" class="linkpics" width="250"></a>
+        <a href="https://www.bettycrocker.com/recipes/ultimate-chocolate-chip-cookies/77c14e03-d8b0-4844-846d-f19304f61c57"><img src="https://media.tenor.com/images/9b61aca1519637ec94e0318f8828bc15/tenor.gif" class="linkpics" width="190"></a>
+        <a href="http://www.espn.com/nba/scoreboard"><img src= "https://s-media-cache-ak0.pinimg.com/originals/0d/5f/cd/0d5fcd32b6bcf1ea29c85bf6b9ff895d.gif" class="linkpics" height="190" width="260"></a>
+
+      <footer>&#9400; Maya Dahlke 2017</footer>
+
   </body>
 </html>
